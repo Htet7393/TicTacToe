@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #9182e4, #d0d659);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 180px 180px 180px;
+    grid-template-rows: 180px 180px 180px;
+    gap: 10px;
+}
+
+.container>div {
+    border: 2px solid darkred;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 10px;
+}
+
+._buttons {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin: 0 10px;
+    width: 150px;
+    height: 50px;
+    color: whitesmoke;
+    border: 2.5px solid darkslategrey;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#clear_button {
+    background-color: navy;
+    transition: background-color 0.3s ease;
+}
+
+#clear_button:hover {
+    background-color: lightblue;
+}
+
+#clear_button:active {
+    background-color: aqua;
+}
+
+#reset_button {
+    background-color: darkred;
+    transition: background-color 0.3s ease;
+}
+
+#reset_button:hover {
+    background-color: orangered;
+}
+
+#reset_button:active {
+    background-color: orange;
+}
+
+#start_button {
+    background-color: green;
+    transition: background-color 0.3s ease;
+}
+
+#start_button:hover {
+    cursor: pointer;
+    background-color: greenyellow;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    background-color: beige;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    font-size: 150px;
+}
+
+.cell:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.display {
+    display: flex;
+    width: 560px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    background: linear-gradient(to top, #387fff, #2ca457);
+}
+
+.scoreboard {
+    font-family: 'Roboto', sans-serif;
+    font-size: 33px;
+    display: flex;
+    margin: 10px 10px;
+    background: black;
+    width: 80px;
+    height: 50px;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid rgb(173, 226, 93);
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    color: rebeccapurple;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px rgba(0, 0, 255, 0.5);
+    text-transform: uppercase;
+    margin: 10px 10px;
+}
