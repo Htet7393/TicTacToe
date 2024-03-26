@@ -279,18 +279,3 @@ function alertMessage(message) {
         timer: 3000 // Disappear after 3 seconds
     });
 }
-
-
-
-/// Internal testing session ///
-// let game = createGameBoard(1, 2);
-// console.log(game.playerOneScore);
-// theGame.setCell(2, 0, 0);
-// theGame.setCell(2, 1, 1);
-// theGame.setCell(1, 2, 2);
-// theGame.setCell(2, 2, 2);
-// theGame.cellCheck(2, 2);
-// theGame.reset();
-// theGame.cellCheck(2, 2);
-
-
